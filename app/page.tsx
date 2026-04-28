@@ -129,8 +129,6 @@ export default function Home() {
         </div>
       </section>
 
-      </section>
-
       <section className="relative z-10 py-20 px-4 bg-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -207,7 +205,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Course Preview */}
       <section className="relative z-10 py-20 px-4 border-t border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -237,7 +234,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="relative z-10 py-8 px-4 border-t border-white/5">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-500 text-sm">
