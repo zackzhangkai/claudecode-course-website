@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Claude Code 7 Days 实战课程',
-  description: '从零开始，掌握 Claude Code 的使用与架构',
+  title: 'AI Tech Hub - 7 天 AI 训练营',
+  description: '加入最前沿的 AI 技术学习社群，7 天实战训练营，手把手带你掌握 AI 开发技能',
 }
 
 export default function RootLayout({
@@ -47,29 +47,6 @@ export default function RootLayout({
         <main>{children}</main>
         <footer className="bg-gray-50 border-t mt-16">
           <div className="max-w-5xl mx-auto px-4 py-8">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6">
-              <div className="text-center">
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">赞赏支持</h3>
-                <div className="bg-white p-3 rounded-lg border shadow-sm inline-block">
-                  <img src="/images/donation-qr.png" alt="赞赏码" className="w-32 h-32 object-contain" />
-                </div>
-                <p className="text-xs text-gray-500 mt-2">创作不易，请作者喝杯咖啡</p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">个人微信</h3>
-                <div className="bg-white p-3 rounded-lg border shadow-sm inline-block">
-                  <img src="/images/wechat-qr.png" alt="个人微信二维码" className="w-32 h-auto object-contain" />
-                </div>
-                <p className="text-xs text-gray-500 mt-2">加入群聊请添加个人微信</p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">技术自留地</h3>
-                <div className="bg-white p-3 rounded-lg border shadow-sm inline-block">
-                  <img src="/images/official-account-qr.png" alt="技术自留地公众号" className="w-32 h-32 object-contain" />
-                </div>
-                <p className="text-xs text-gray-500 mt-2">扫码关注公众号</p>
-              </div>
-            </div>
             <div className="text-center text-gray-500 text-sm">
               © 2026 Claude Code Training Team
             </div>

@@ -5,123 +5,97 @@ export default function Home() {
   const courses = getAllCourses()
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white overflow-hidden">
+    <div className="min-h-screen bg-gray-950 text-white overflow-x-hidden">
       <div className="fixed inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-gray-950 to-blue-900/20" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-purple-500/5 to-blue-500/5 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-gray-950 to-blue-900/30" />
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-purple-500/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px]" />
       </div>
 
-      <nav className="relative z-10 border-b border-white/5 backdrop-blur-sm">
+      <nav className="relative z-10 border-b border-white/5 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
               AI Tech Hub
             </Link>
             <div className="flex items-center gap-6">
-              <a href="#training" className="text-sm text-gray-400 hover:text-white transition-colors">训练营</a>
-              <a href="#contact" className="text-sm text-gray-400 hover:text-white transition-colors">联系我们</a>
-              <a
-                href="https://github.com/zackzhangkai/claudecode-course-website"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29 1.02-2.68 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02 1.47 1.39 1.13 2.43 1.03 2.68.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
-                </svg>
-              </a>
+              <a href="/#pricing" className="text-sm text-gray-400 hover:text-white transition-colors">训练营</a>
+              <a href="https://b773af71.openclaw-course-website.pages.dev/" target="_blank" className="text-sm text-gray-400 hover:text-white transition-colors">OpenClaw</a>
+              <a href="/#compare" className="text-sm text-gray-400 hover:text-white transition-colors">课程对比</a>
+              <a href="/#faq" className="text-sm text-gray-400 hover:text-white transition-colors">常见问题</a>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative z-10 py-24 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full border border-white/10 mb-8">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span className="text-sm text-gray-400">AI 技术学习交流社群</span>
+      <section className="relative z-10 py-20 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-full mb-8">
+            <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+            <span className="text-sm text-red-400">限时优惠 · 仅剩 23 个名额</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
-              AI 时
+              AI 时代
             </span>
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              代革命
+            <span className="block text-3xl md:text-5xl mt-2">
+              最快的学习路径
             </span>
-            <br />
-            <span className="text-4xl md:text-6xl">从入门��实战</span>
           </h1>
           
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-            加入最前沿的 AI 技术学习社群，7 天实战训练营，手把手带你掌握 AI 开发技能
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+            别人还在摸索，你已经能用 AI 创造价值。<br/>
+            7 天实战训练营，带你从小白到独立开发 AI 应用
           </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
-              href="#contact"
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl font-semibold hover:from-purple-500 hover:to-blue-500 transition-all transform hover:scale-105 shadow-lg shadow-purple-500/25"
+              href="#pricing"
+              className="px-8 py-4 bg-gradient-to-r from-red-600 to-orange-500 rounded-xl font-bold text-lg hover:from-red-500 hover:to-orange-400 transition-all transform hover:scale-105 shadow-lg shadow-red-500/30 animate-pulse"
             >
-              立即加入训练营
+              💰 限时 99 元加入训练营
             </a>
             <Link
               href="/courses/lesson1-basics"
               className="px-8 py-4 bg-white/5 border border-white/10 rounded-xl font-semibold hover:bg-white/10 transition-all"
             >
-              免费预览课程
+              免费试看第一节
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
             {[
-              { value: '500+', label: '学员总数' },
-              { value: '8', label: '精品课程' },
-              { value: '7', label: '天实战训练' },
-              { value: '24/7', label: '技术支持' },
+              { value: '500+', label: '学员已加入' },
+              { value: '89%', label: '完成率' },
+              { value: '4.9', label: '满意度' },
+              { value: '7', label: '天见效' },
             ].map((stat, i) => (
-              <div key={i} className="text-center p-6 bg-white/5 rounded-2xl border border-white/5">
-                <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-gray-500 mt-1">{stat.label}</div>
+              <div key={i} className="p-4 bg-white/5 rounded-xl border border-white/5">
+                <div className="text-2xl font-bold text-white">{stat.value}</div>
+                <div className="text-xs text-gray-500">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="training" className="relative z-10 py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                7 天 AI 训练营
-              </span>
+      <section className="relative z-10 py-16 px-4 bg-gradient-to-r from-purple-900/20 to-blue-900/20">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold">
+              🚀 你是否也经历过这些？
             </h2>
-            <p className="text-gray-400">系统化学习路径，每天一个里程碑</p>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
-              { day: 'Day 1', title: 'AI 基础入门', desc: '了解 AI 大模型发展历程，掌握提示词工程核心技巧', color: 'from-purple-500 to-purple-600' },
-              { day: 'Day 2', title: '提示词进阶', desc: 'Few-shot 学习、思维链、角色扮演等高级技巧', color: 'from-blue-500 to-blue-600' },
-              { day: 'Day 3', title: 'AI 编程实战', desc: '使用 Claude Code 进行代码开发、调试和优化', color: 'from-cyan-500 to-cyan-600' },
-              { day: 'Day 4', title: '自动化工作流', desc: '构建 AI 驱动的自动化工作流程', color: 'from-green-500 to-green-600' },
-              { day: 'Day 5', title: 'API 集成', desc: '调用第三方 API，实现 AI 能力扩展', color: 'from-yellow-500 to-yellow-600' },
-              { day: 'Day 6', title: '项目实战', desc: '完整项目开发，从 0 到 1 落地', color: 'from-orange-500 to-orange-600' },
-              { day: 'Day 7', title: '部署上线', desc: '将项目部署到生产环境', color: 'from-red-500 to-red-600' },
+              { icon: '🤔', title: 'AI 工具一堆', desc: '不知道哪个适合自己，花了大量时间调研却毫无头绪' },
+              { icon: '📚', title: '学了很多', desc: '看了无数教程，一到实际应用还是无处下手' },
+              { icon: '😰', title: '被替代焦虑', desc: '担心 AI 时代到来，自己却找不到价值定位' },
             ].map((item, i) => (
-              <div
-                key={i}
-                className="group p-6 bg-white/5 rounded-2xl border border-white/5 hover:border-white/20 transition-all hover:transform hover:-translate-y-1"
-              >
-                <div className={`inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r ${item.color} rounded-full text-sm font-medium mb-4`}>
-                  {item.day}
-                </div>
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+              <div key={i} className="p-6 bg-white/5 rounded-2xl border border-white/5">
+                <div className="text-3xl mb-3">{item.icon}</div>
+                <h3 className="font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-400">{item.desc}</p>
               </div>
             ))}
@@ -129,27 +103,172 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-10 py-20 px-4 bg-white/5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                为什么选择我们
-              </span>
+      <section id="pricing" className="relative z-10 py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-block px-4 py-1 bg-red-500/10 border border-red-500/30 rounded-full text-red-400 text-sm mb-4">
+              ⏰ 限时优惠，24小时后恢复原价
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              7 天 AI 训练营
             </h2>
-            <p className="text-gray-400">不只是课程，更是圈子</p>
+            <p className="text-gray-400">从 ¥199 降至 <span className="text-red-400 font-bold">¥99</span></p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="relative">
+            <div className="absolute -top-4 right-4 z-10 px-4 py-1 bg-red-500 text-white text-sm font-bold rounded-full animate-pulse">
+              🔥 限时优惠
+            </div>
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl border border-red-500/50 overflow-hidden">
+              <div className="p-8 md:p-12">
+                <div className="text-center mb-8">
+                  <div className="text-gray-400 line-through mb-2">原价: ¥199</div>
+                  <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+                    ¥99
+                  </div>
+                  <div className="text-sm text-gray-500 mt-2">仅限前 30 名学员</div>
+                </div>
+
+                <div className="space-y-4 mb-8">
+                  {[
+                    '✅ 7 天完整训练营课程（价值 ¥199）',
+                    '✅ 加入专属学习社群',
+                    '✅ 导师一对一答疑（价值 ¥199）',
+                    '✅ 3 个实战项目指导（价值 ¥199）',
+                    '✅ 课程持续更新',
+                    '✅ 学员专属资源包',
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3 text-base">
+                      <span className="text-green-400">✓</span>
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <a
+                  href="#contact"
+                  className="block w-full py-4 bg-gradient-to-r from-red-600 to-orange-500 rounded-xl font-bold text-lg text-center hover:from-red-500 hover:to-orange-400 transition-all transform hover:scale-[1.02] shadow-lg shadow-red-500/30"
+                >
+                  🚀 立即加入训练营
+                </a>
+
+                <div className="text-center mt-4 text-sm text-gray-500">
+                  💳 支持微信/支付宝支付
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto">
+            <div className="flex items-center justify-center gap-2 text-gray-400">
+              <span>🛡️ 7 天无理由退款</span>
+            </div>
+            <div className="flex items-center justify-center gap-2 text-gray-400">
+              <span>⭐ 4.9 分好评</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="compare" className="relative z-10 py-20 px-4 bg-white/5">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">免费 vs 付费</h2>
+            <p className="text-gray-400">你将获得什么？</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="p-8 bg-white/5 rounded-2xl border border-white/10">
+              <div className="text-center mb-6">
+                <div className="text-lg text-gray-400 mb-2">免费内容</div>
+                <div className="text-2xl font-bold">预览课程</div>
+              </div>
+              <div className="space-y-3 text-gray-400">
+                <div>✗ 基础课程文章</div>
+                <div>✗ 无社群互动</div>
+                <div>✗ 无答疑服务</div>
+                <div>✗ 无实战指导</div>
+                <div>✗ 需自学成才</div>
+              </div>
+              <div className="mt-6 pt-6 border-t border-white/10 text-center">
+                <div className="text-3xl font-bold text-gray-500">¥0</div>
+                <Link
+                  href="/courses/lesson1-basics"
+                  className="mt-4 block w-full py-3 bg-white/5 rounded-xl text-gray-400 hover:bg-white/10 transition-all"
+                >
+                  免费试看
+                </Link>
+              </div>
+            </div>
+
+            <div className="p-8 bg-gradient-to-b from-purple-900/50 to-blue-900/50 rounded-2xl border-2 border-red-500/50 relative overflow-hidden">
+              <div className="absolute top-4 right-4 px-3 py-1 bg-red-500 text-white text-xs font-bold rounded-full">
+                推荐
+              </div>
+              <div className="text-center mb-6">
+                <div className="text-lg text-purple-400 mb-2">付费内容</div>
+                <div className="text-2xl font-bold">训练营</div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>完整 7 天课程</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>专属学习社群</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>导师一对一答疑</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>3 个实战项目</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>持续更新迭代</span>
+                </div>
+              </div>
+              <div className="mt-6 pt-6 border-t border-white/10 text-center">
+                <div className="text-gray-400 line-through">¥199</div>
+                <div className="text-3xl font-bold text-red-400">¥99</div>
+                <a
+                  href="#contact"
+                  className="mt-4 block w-full py-3 bg-gradient-to-r from-red-600 to-orange-500 rounded-xl font-bold hover:from-red-500 hover:to-orange-400 transition-all"
+                >
+                  立即加入
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="training" className="relative z-10 py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">7 天学习路径</h2>
+            <p className="text-gray-400">每天一个里程碑</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { icon: '🚀', title: '实战导向', desc: '每节课都有动手实践项目，学完就能用' },
-              { icon: '💬', title: '社群答疑', desc: '加入专属学习群，导师随时答疑' },
-              { icon: '📚', title: '持续更新', desc: '课程内容持续迭代，紧跟技术前沿' },
+              { day: 'Day 1', title: 'AI 基础入门', desc: '提示词工程核心技巧', color: 'purple' },
+              { day: 'Day 2', title: '提示词进阶', desc: 'Few-shot、思维链', color: 'blue' },
+              { day: 'Day 3', title: 'AI 编程', desc: 'Claude Code 实战', color: 'cyan' },
+              { day: 'Day 4', title: '自动化', desc: '工作流构建', color: 'green' },
+              { day: 'Day 5', title: 'API 集成', desc: '第三方服务', color: 'yellow' },
+              { day: 'Day 6', title: '项目实战', desc: '完整项目开发', color: 'orange' },
+              { day: 'Day 7', title: '部署上线', desc: '生产环境部署', color: 'red' },
             ].map((item, i) => (
-              <div key={i} className="text-center p-8 bg-white/5 rounded-2xl border border-white/5">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-400">{item.desc}</p>
+              <div key={i} className="p-5 bg-white/5 rounded-xl border border-white/5 hover:border-white/20 transition-all">
+                <div className={`inline-block px-3 py-1 bg-${item.color}-500/20 text-${item.color}-400 rounded-full text-sm mb-3`}>
+                  {item.day}
+                </div>
+                <h3 className="font-semibold mb-1">{item.title}</h3>
+                <p className="text-sm text-gray-500">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -157,78 +276,117 @@ export default function Home() {
       </section>
 
       <section id="contact" className="relative z-10 py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="p-12 bg-gradient-to-br from-purple-900/50 to-blue-900/50 rounded-3xl border border-white/10">
-            <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                加入 AI 学习社群
-              </span>
-            </h2>
-            <p className="text-gray-400 mb-8">扫码添加微信，备注"训练营"，立即加入</p>
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="p-10 bg-gray-900 rounded-3xl border border-white/10">
+            <h2 className="text-2xl font-bold mb-4">立即加入训练营</h2>
+            <p className="text-gray-400 mb-8">扫码添加微信，备注"训练营" <span className="text-red-400">(¥99)</span></p>
             
-            <div className="flex flex-col md:flex-row items-center justify-center gap-12">
-              <div className="p-4 bg-white rounded-2xl shadow-2xl">
-                <div className="w-48 h-48 bg-gray-100 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-40 h-40 bg-gray-200 rounded-lg flex items-center justify-center mb-2">
-                      <span className="text-6xl">📱</span>
-                    </div>
-                    <p className="text-xs text-gray-500">微信二维码</p>
-                  </div>
-                </div>
+            <div className="flex flex-col items-center gap-8">
+              <div className="p-4 bg-white rounded-2xl">
+                <img src="/images/wechat-qr.png" alt="微信二维码" className="w-48 h-48 object-contain" />
               </div>
               
-              <div className="text-left space-y-4">
-                <div className="flex items-center gap-3">
-                  <span className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center text-green-400">✓</span>
-                  <span className="text-gray-300">7 天完整训练营课程</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center text-green-400">✓</span>
-                  <span className="text-gray-300">专属社群交流</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center text-green-400">✓</span>
-                  <span className="text-gray-300">导师一对一答疑</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center text-green-400">✓</span>
-                  <span className="text-gray-300">项目实战指导</span>
-                </div>
+              <div className="text-left space-y-3 text-sm text-gray-400">
+                <div>1. 扫码添加微信</div>
+                <div>2. 备注"训练营"</div>
+                <div>3. 支付 ¥99</div>
+                <div>4. 邀请入群开始学习</div>
               </div>
             </div>
-
-            <p className="mt-8 text-sm text-gray-500">
-              * 添加微信后请备注"训练营"，等待通过后邀请入群
-            </p>
           </div>
         </div>
       </section>
 
-      <section className="relative z-10 py-20 px-4 border-t border-white/5">
+      <section className="relative z-10 py-16 px-4 border-t border-white/5">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">课程预览</h2>
-            <p className="text-gray-400">免费预览部分课程内容</p>
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold mb-4">免费预览课程</h2>
+            <p className="text-gray-400">先试看，再决定</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {courses.slice(0, 4).map((course, index) => (
-              <Link
-                key={course.slug}
-                href={`/courses/${course.slug}`}
-                className="group p-6 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/50 transition-all"
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-xl">🤖</span>
+                <h3 className="text-lg font-semibold">Claude Code 课程</h3>
+              </div>
+              <div className="space-y-3">
+                {courses.slice(0, 4).map((course, index) => (
+                  <Link
+                    key={course.slug}
+                    href={`/courses/${course.slug}`}
+                    className="flex items-center gap-3 p-4 bg-white/5 rounded-xl border border-white/5 hover:border-purple-500/50 transition-all"
+                  >
+                    <span className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center text-sm font-bold">
+                      {index + 1}
+                    </span>
+                    <div>
+                      <h4 className="font-medium">{course.title}</h4>
+                      <p className="text-xs text-gray-500">{course.description}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-xl">🦀</span>
+                <h3 className="text-lg font-semibold">OpenClaw 课程</h3>
+                <span className="text-xs text-gray-500">(OpenCode 免费模型)</span>
+              </div>
+              <div className="space-y-3">
+                {[
+                  { title: 'OpenClaw 入门', desc: '零基础快速上手 OpenClaw' },
+                  { title: '提示词工程', desc: '如何高效提问 AI' },
+                  { title: '多模型对比', desc: '选择最适合的模型' },
+                  { title: '实战案例', desc: '真实场景应用' },
+                ].map((course, index) => (
+                  <a
+                    key={index}
+                    href="https://b773af71.openclaw-course-website.pages.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 bg-white/5 rounded-xl border border-white/5 hover:border-cyan-500/50 transition-all"
+                  >
+                    <span className="w-8 h-8 bg-cyan-500/20 rounded-lg flex items-center justify-center text-sm font-bold">
+                      {index + 1}
+                    </span>
+                    <div>
+                      <h4 className="font-medium">{course.title}</h4>
+                      <p className="text-xs text-gray-500">{course.desc}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+              <a
+                href="https://b773af71.openclaw-course-website.pages.dev/"
+                target="_blank"
+                className="mt-4 block text-center py-3 bg-cyan-500/10 border border-cyan-500/30 rounded-xl text-cyan-400 hover:bg-cyan-500/20 transition-all"
               >
-                <div className="flex items-center gap-4 mb-3">
-                  <span className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center font-bold">
-                    {index + 1}
-                  </span>
-                  <h3 className="font-semibold group-hover:text-purple-400 transition-colors">
-                    {course.title}
-                  </h3>
-                </div>
-                <p className="text-sm text-gray-400">{course.description}</p>
-              </Link>
+                查看更多 OpenClaw 课程 →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" className="relative z-10 py-16 px-4 bg-white/5">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold">常见问题</h2>
+          </div>
+          <div className="space-y-4">
+            {[
+              { q: '零基础可以学吗？', a: '可以，课程专为小白设计，从最基础讲起' },
+              { q: '课程是直播还是录播？', a: '录播课程 + 社群答疑，可反复观看' },
+              { q: '支付后如何学习？', a: '添加微信后 24 小时内邀请入群，发放课程链接' },
+              { q: '需要准备什么？', a: '一部电脑 + 稳定的网络即可' },
+            ].map((item, i) => (
+              <div key={i} className="p-5 bg-white/5 rounded-xl">
+                <h3 className="font-semibold mb-2">Q: {item.q}</h3>
+                <p className="text-gray-400 text-sm">A: {item.a}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -236,9 +394,7 @@ export default function Home() {
 
       <footer className="relative z-10 py-8 px-4 border-t border-white/5">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-500 text-sm">
-            © 2026 AI Tech Hub · 技术自留地 · All rights reserved
-          </p>
+          <p className="text-gray-500 text-sm">© 2026 AI Tech Hub</p>
         </div>
       </footer>
     </div>
