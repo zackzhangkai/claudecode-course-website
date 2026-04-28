@@ -7,8 +7,10 @@ type = "static"
   watch_dir = "./"
 
 [deploy]
-  # The directory to deploy to Cloudflare Pages
   directory = "./out"
+
+# Required by Pages
+pages_build_output_dir = "./out"
 
 # Node.js version for Cloudflare Pages build environment
 [build.environment]

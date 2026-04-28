@@ -3,8 +3,8 @@
 > 从零开始，掌握 Claude Code 的使用与架构
 
 🖥️ **在线课程网站**:
-- **Vercel**: https://claudecode-7days.vercel.app
 - **Cloudflare Pages**: https://claudecode-7days.pages.dev
+- **Vercel**: https://claudecode-7days.vercel.app (待部署)
 
 ---
 
