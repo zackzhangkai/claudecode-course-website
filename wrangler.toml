@@ -1,0 +1,15 @@
+name = "claudecode-7days"
+type = "static"
+
+[build]
+  command = "npm run build"
+  cwd = "."
+  watch_dir = "./"
+
+[deploy]
+  # The directory to deploy to Cloudflare Pages
+  directory = "./out"
+
+# Node.js version for Cloudflare Pages build environment
+[build.environment]
+  NODE_VERSION = "18"
